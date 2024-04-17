@@ -22,3 +22,5 @@ Assignment for wine data analysis using react, yarn and Mantine UI framework.
 8. Run `yarn start` to start the project which will automatically open in browser.
 
 ### Screenshots of the project is @`/screenshots`
+
+![screenshot of Flavanoids data table](https://github.com/niksanand1717/manufac_assignment/blob/main/screenshots/flavanoids%20table.png)
