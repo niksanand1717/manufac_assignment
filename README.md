@@ -23,4 +23,8 @@ Assignment for wine data analysis using react, yarn and Mantine UI framework.
 
 ### Screenshots of the project is @`/screenshots`
 
+Screenshot of Flavanoids Table
 ![screenshot of Flavanoids data table](https://github.com/niksanand1717/manufac_assignment/blob/main/screenshots/flavanoids%20table.png)
+
+Screenshot of Gamma Table
+![screenshot of Gamma data table](https://raw.githubusercontent.com/niksanand1717/manufac_assignment/main/screenshots/gaama%20table.png)
