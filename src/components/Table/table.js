@@ -24,6 +24,7 @@ export const TableData = ({ wineClassList, rowData, title }) => {
         style={{
           backgroundColor: theme.colors.myColorPalette[1],
           border: "1px solid black",
+          borderColor: theme.colors.myColorPalette[1],
           borderCollapse: "collapse",
           padding: "1vh 2.5vw",
           height: "30vh",

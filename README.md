@@ -19,4 +19,6 @@ Assignment for wine data analysis using react, yarn and Mantine UI framework.
 5. Open Terminal/CMD at your project root.
 6. Run the command `yarn install`.
 7. After completing step 6 successfully.
-8. Run `yarn start` to start the browser.
+8. Run `yarn start` to start the project which will automatically open in browser.
+
+### Screenshots of the project is @`/screenshots`
