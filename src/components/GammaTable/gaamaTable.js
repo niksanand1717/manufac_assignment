@@ -1,16 +1,22 @@
 import React from "react";
 import wineData from "../../data/Wine-Data.json";
-import { useMantineTheme } from "@mantine/core";
 import { TableData } from "../Table/table";
 import { mostFrequent, extractWineClasses } from "../../utilities/utils";
 
+// A component function to find data required to calculate
+// Mean, Median and Mode for Gaama of wine and returning
+// Table based on data.
 export const GaamaTable = () => {
+  // extracting required data to show gamma data
+  // of various wine classes.
   const { wineClassList, gammaData } = extractWineClasses(wineData);
-  //   console.log(wineClassList);
+
+  //   initializing constants to store mean, median and mode of gamma
   const meanOfGamma = [];
   const medianOfGamma = [];
   const modeOfGamma = [];
 
+  //   calculating all the values and setting the constants
   for (let gamma in gammaData) {
     let mean = 0;
     let summ = 0;
@@ -38,6 +44,8 @@ export const GaamaTable = () => {
     meanOfGamma.push(mean);
   }
 
+  // setting row data for mean, median and mode for
+  // Gamma of various wine classes
   const rowData = [
     {
       title: "Gamma Mean",
@@ -52,7 +60,9 @@ export const GaamaTable = () => {
       data: modeOfGamma,
     },
   ];
+
   return (
+    // Passing required data to show gamma data in Table
     <TableData
       wineClassList={wineClassList}
       rowData={rowData}

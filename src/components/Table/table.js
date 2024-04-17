@@ -1,5 +1,8 @@
 import React from "react";
 import { Center, Title, useMantineTheme, Table } from "@mantine/core";
+
+// A resuable Table component to show data in tabular form
+// as per the data passed.
 export const TableData = ({ wineClassList, rowData, title }) => {
   const theme = useMantineTheme();
   return (

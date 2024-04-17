@@ -1,9 +1,10 @@
 import "./App.css";
-import MMMTable from "./components/MMMTable/flavanoidsTable";
 import { useMantineTheme } from "@mantine/core";
-import MyTab from "./components/tab";
 import { GaamaTable } from "./components/GammaTable/gaamaTable";
+import FlavanoidsTable from "./components/flavanoidsTable/flavanoidsTable";
 function App() {
+  // using useMantimeTheme hook to implement theme
+  // on app component
   const theme = useMantineTheme();
   return (
     <div
@@ -11,7 +12,9 @@ function App() {
         backgroundColor: theme.colors.myColorPalette[0],
       }}
     >
-      <MMMTable />
+      {/* importing Flavanoids table to show flavanoids data */}
+      <FlavanoidsTable />
+      {/* importing Gaama table to show gamma data */}
       <GaamaTable />
     </div>
   );

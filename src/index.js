@@ -5,12 +5,14 @@ import App from "./App";
 import { MantineProvider } from "@mantine/core";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  // imported MantineProvider to share the defined theme to
+  // whole web app
   <React.StrictMode>
     <MantineProvider
+      // defining theme for the app with custom colors type and
+      // color palette, shadows, fontSizes, headings etc.
       theme={{
-        // Theme is deeply merged with default theme
         colorScheme: "light",
-
         colors: {
           // Add your color
           "deep-blue": ["#E9EDFC", "#C1CCF6", "#99ABF0" /* ... */],
